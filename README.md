@@ -11,6 +11,7 @@ In this small project, I only use basic knowledge when we learn programming like
 + String
 + Struct 
 + Pass by reference (pointer)
+
 And We need to declare the following libraries to use: <stdio.h>, <string.h>, <stdlib.h>
 ## Installation
 1. git clone https://github.com/tontide1/-Student-management.git
