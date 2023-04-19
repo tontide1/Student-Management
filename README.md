@@ -6,6 +6,7 @@ When running the program will look like this !
 [video](https://user-images.githubusercontent.com/124888314/233148383-75471055-7cfe-408e-9837-4f0925888ba3.mp4)
 ## Knowledge used
 First, we need to declare the following libraries to use: <stdio.h>, <string.h>, <stdlib.h>.
+
 In this small project, I only use basic knowledge when we learn programming like:
 + Loop (for, do while)
 + Switch case
