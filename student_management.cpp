@@ -241,7 +241,7 @@ void sort(st a[MAX], int n){
     printf("Press U/D: ");
     scanf("%s", choose);
     if(strcmp(choose,"U") == 0 || strcmp(choose,"Up") == 0 || strcmp(choose,"up") == 0 || strcmp(choose, "u") == 0){
-        for (int i = 0; i < n-1; i++){  //bbubble sort
+        for (int i = 0; i < n-1; i++){  //bubble sort
             for (int j = 1; j < n; j++){
                 if(a[i].avrPoint > a[j].avrPoint){
                     temp = a[i].avrPoint;
@@ -253,7 +253,7 @@ void sort(st a[MAX], int n){
         printList(a,n);
     }
     else if(strcmp(choose,"D") == 0 || strcmp(choose,"Down") == 0 || strcmp(choose,"down") == 0 || strcmp(choose, "d") == 0){
-        for (int i = 0; i < n-1; i++){
+        for (int i = 0; i < n-1; i++){ //bubble sort
             for (int j = 1; j < n; j++){
                 if(a[i].avrPoint < a[j].avrPoint){
                     temp = a[i].avrPoint;
@@ -270,14 +270,9 @@ void sort(st a[MAX], int n){
     }
 }
 void deleted(st a[MAX], int &n, int index){
-    if (index >= n) {
-        printf("Error: Index out of range!\n");
-        return;
-    }
-
     for (int i = index; i < n - 1; i++)
     {
-        strcpy(a[i].id, a[i+1].id);
+        a[i] = a[i+1];
     }
     n--;
 }
@@ -289,18 +284,21 @@ void deleteStudent(st a[MAX], int &n){
     printf("Enter the ID to remove: ");
     gets(id);
 
+    bool found = false; // variable found is used to check if there is an ID that meets the required condition
     for (int i = 0; i < n; i++)
     {
         if(strcmp(a[i].id, id) == 0){
             deleted(a,n,i);
             printList(a,n);
-        }
-        else{
-            printf("No ID to delete !\n");
+            found = true;
             break;
         }
     }
+    if (!found) {
+        printf("No ID to delete!\n");
+    }
 }
+
 void insert(st a[MAX], int &n, st b){
     int size = sizeof(a)/sizeof(a[0]);
     if (n == size) {
