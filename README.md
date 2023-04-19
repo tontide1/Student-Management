@@ -14,7 +14,7 @@ In this small project, I only use basic knowledge when we learn programming like
 + Pass by reference (pointer)
 ## Installation
 1. git clone https://github.com/tontide1/-Student-management.git
-2. To be able to run the program you can run file '#008000'.exe or you want to run, debug and edit code so you should download and install IDE:
+2. To be able to run the program you can run file **.exe** or you want to run, debug and edit code so you should download and install IDE:
     + [Dev C++](https://onboardcloud.dl.sourceforge.net/project/dev-cpp/Binaries/Dev-C%2B%2B%204.9.9.2/devcpp-4.9.9.2_setup.exe) ( Simple method )
     + [Visual Studio 2022](https://c2rsetup.officeapps.live.com/c2r/downloadVS.aspx?sku=community&channel=Release&version=VS2022&source=VSLandingPage&add=Microsoft.VisualStudio.Workload.ManagedDesktop&add=Microsoft.VisualStudio.Workload.Azure&add=Microsoft.VisualStudio.Workload.NetWeb&includeRecommended=true&cid=2030:df49cbf75b824b0fb722ccdd550df3e9) ( Simple method )
     + If you use [Vs code](https://az764295.vo.msecnd.net/stable/704ed70d4fd1c6bd6342c436f1ede30d1cff4710/VSCodeUserSetup-x64-1.77.3.exe) you can follow this [config Vs code for C/C++](https://code.visualstudio.com/docs/cpp/config-msvc) ( A little difficult )
