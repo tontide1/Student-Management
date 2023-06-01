@@ -10,7 +10,7 @@ First, we need to declare the following libraries to use: <stdio.h>, <string.h>,
 In this small project, I only use basic knowledge when we learn programming like:
 + Loop (for, do while)
 + Switch case
-+ condition (if else)
++ Condition (if else)
 + Function
 + Array
 + String
